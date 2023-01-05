@@ -1,0 +1,33 @@
+h1 {
+  color: blue;
+  background-color: green;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  background-color: blue;
+  font-family: Arial;
+}
+
+ol{
+  color: red;
+  background-color: pink;
+  border: 5px solid green;
+  font-family: sans-serif;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border: 5px solid pink;
+}
+
+table, td, th{
+  border: 2px solid green;
+  line-height: 70px;
+}
+
+body{
+  background-color: orange;
+}

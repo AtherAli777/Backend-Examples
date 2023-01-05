@@ -1,0 +1,47 @@
+img{
+  height:500px;
+  opacity:0.7;
+}
+
+.btn-primary{
+  background-color:#ffa801;
+  border: none;
+  color: black;
+}
+
+.jumbotron{
+  background-image: url('Image/Car_Slide1.jpeg');
+  opacity: 0.5;
+}
+
+.jumbotron > p{
+  color: red;
+  padding-left: 20px;
+}
+
+.jumbotron > h1{
+  color: red;
+  padding-left: 20px;
+}
+
+.btn{
+  margin: 20px;
+}
+
+
+.card{
+  margin: 20px;
+  background-color:#ffdd59;
+}
+
+div > img{
+  height: 92px;
+  width: 92px;
+  opacity:1;
+}
+
+.copyright{
+  text-align: center;
+  margin-top:30px;
+  padding-bottom:10px;
+}

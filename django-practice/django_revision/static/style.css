@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+1. make text inside container center
+2. create a max-width of 300 for progress container and display flex
+3. create a line in class Progress
+4. create a line before for class Progress
+5. create circles
+6. give border to circles
+7. style buttons and make previous button disable
+*/
+
+/* custome property to define we use scope */
+:root{
+  --line--border-fill: #3498db;
+  --line--border-empty: #e0e0e0e0;
+}
+
+body{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow:hidden;
+  background-color: #f6f7fb;
+}
+
+/* 1. make text inside container center */
+.container{
+  text-align: center;
+}
+
+/* 2. create a max-width of 300 for progress container and display flex */
+.progress-container{
+  position:relative;
+  max-width: 100%;
+  width: 350px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+ For line which will be behind the blue line for this
+ it will be created in progress-container. use content =""
+ to make before work
+*/
+.progress-container::before{
+  content: "";
+  background-color:#e0e0e0e0;
+  position: absolute;
+  top: 50%;
+  left:0;
+  height: 4px;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .4s ease;
+}
+
+
+/* Working on line which should be in middle with numbers
+It should be behind the circle and it will transition */
+.progress{
+  background-color:#3498db ;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width:  0%;
+  /* to center the line with number */
+  transform: translateY(-50%);
+  /* to make sure the line is behind the circle */
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+
+/*
+    creating circle and making everthing inside circle center
+    also adding transition for border
+*/
+
+.circle{
+  border: 3px solid #e0e0e0e0;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  background-color: #fff;
+}
+
+.circle.active{
+  border-color: #3498db;
+}
+
+
+.btn{
+  background-color: #3498db;
+  border-radius: 6px;
+  border: 0;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:active{
+  transform: scale(0.98);
+}
+
+.btn:focus{
+  outline:0
+}
+
+.btn:disabled{
+  background-color: #e0e0e0e0;
+  cursor: not-allowed;
+}

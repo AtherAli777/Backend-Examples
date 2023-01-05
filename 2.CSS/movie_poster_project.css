@@ -1,0 +1,56 @@
+body {
+  background-color: #2f3640;
+}
+
+.h1title{
+  font-family: cursive;
+  color: #cf84b2;
+  text-align: center;
+}
+
+.containerCenter{
+  position: relative;
+  background-color: #485460;
+  width: 500px;
+  height: 150px;
+  left: 30%;
+}
+
+.imgOne{
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  top: 25px;
+  left: 25px;
+}
+
+.imageTwo{
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  top: 25px;
+  left: 280px;
+}
+
+.copyft{
+  position: fixed;
+  background-color: #485460;
+  bottom: 0px;
+  left: 0px;
+  width: 500px;
+}
+
+#imge1{
+  height: 100px;
+  width: 200px;
+}
+
+#imge2{
+  height: 100px;
+  width: 160px;
+}
+
+#textID{
+  color: #ef5777;
+  font-family: arial;
+}

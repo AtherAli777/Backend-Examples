@@ -1,0 +1,34 @@
+body{
+  background-color: #2f3640;
+}
+
+#h1ID{
+  text-align: center;
+  font-family: cursive;
+  color: #cf84b2;
+}
+
+div{
+  background-color: #485460;
+}
+
+img{
+  width: 30%;
+  height: 5%;
+  padding: 10px;
+}
+
+.ImgClass{
+  position: relative;
+  left: 100px;
+}
+
+#copyClass{
+  position: fixed;
+  bottom: 10px;
+}
+
+h3{
+  font-family: arial;
+  color: red;
+}

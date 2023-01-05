@@ -1,0 +1,61 @@
+body{
+  background-color: #C4E538;
+}
+
+#h1border{
+  font-family:Helvetica;
+  border:8px solid blue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#welcome{
+  position:relative;
+  left:100px;
+  padding-top:10px;
+}
+
+#pBox{
+  position:absolute;
+  top:70px;
+}
+
+.container-paint{
+  background-color:#ffdd59;
+  height: 120px;
+}
+
+.paintImg{
+  border:3px solid orange;
+  position:relative;
+  padding: 3px;
+  margin-top: 20px;
+}
+
+.blueBox{
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin-top: 40px;
+  padding: 5px;
+  position: relative;
+  left: 20px;
+}
+
+.copyright{
+  background-color: yellow;
+  width: 400px;
+}
+
+.shopFixed{
+  background-color:pink;
+  position:fixed;
+  bottom:10px;
+  right: 20px;
+  padding: 10px;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+}

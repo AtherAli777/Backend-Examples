@@ -1,0 +1,26 @@
+body{
+  background-color:#7efff5;
+  font-family: helvetica;
+}
+
+ul{
+  list-style-type: none;
+  background-color: blue;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+li{
+  float: left;
+}
+
+a{
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  display: block;
+}
+
+a:hover{
+  background-color: black;
+}

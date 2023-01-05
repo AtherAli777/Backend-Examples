@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form  action="{% url 'contact' %}" >
+      <input type="text" name="user_input" value="">
+      <input type="submit" name="" value="Click Me">
+    </form>
+
+
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+  </body>
+</html>

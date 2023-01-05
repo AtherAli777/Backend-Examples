@@ -1,0 +1,14 @@
+p {
+  background-color: red;
+}
+
+h1 {
+  color: red;
+  background-color: yellow;
+}
+
+ol, li{
+  color: red;
+  background-color: pink;
+  border: 1px solid green;
+}

@@ -1,0 +1,23 @@
+body{
+  background-color:#7efff5;
+  font-family: helvetica;
+}
+
+.nav{
+  background-color:#4b4b4b;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+  margin:0px 0px 0px 2px;
+  padding: 12px;
+  position:relative;
+  left:30px;
+}
+
+a:hover{
+  background-color:#3d3d3d;
+}

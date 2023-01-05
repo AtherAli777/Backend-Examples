@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Lato', 'sans-serif';
+    overflow-x: hidden; /* hides scroll bar horizontally */
+    color: #222;
+    background-color: #333;
+}
+
+.container{
+    background-color: #fafafa;
+    transform-origin: top left; /*setting the origin from top left */
+    transition: transform 0.5s linear;
+     /* Taking 100 view port*/
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/* rotating the container by some degree  */
+.container.show-nav{
+    transform: rotate(-20deg);
+}
+
+/* We want half-circle on edge of page so we are using -100 */
+.circle-container{
+    position: fixed;
+    top:-100px;
+    left: -100px;
+}
+
+.circle{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.4s linear;
+}
+
+.circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height:100px;
+    background: transparent;
+    border:0;
+    font-size:26px;
+    color:#fff;
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+.circle button#open{
+    left: 60%;
+}
+
+.circle button#close{
+    top:60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content img{
+    max-width: 100%;
+}
